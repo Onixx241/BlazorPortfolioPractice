@@ -1,0 +1,39 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v8.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v8.0": {
+      "PortfolioSite/1.0.0": {
+        "dependencies": {
+          "ThemeSwitcher": "1.0.0"
+        },
+        "runtime": {
+          "PortfolioSite.dll": {}
+        }
+      },
+      "ThemeSwitcher/1.0.0": {
+        "runtime": {
+          "ThemeSwitcher.dll": {
+            "assemblyVersion": "1.0.0",
+            "fileVersion": "0.0.0.0"
+          }
+        }
+      }
+    }
+  },
+  "libraries": {
+    "PortfolioSite/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "ThemeSwitcher/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}
