@@ -1,86 +1,138 @@
 @page "/"
-
+@inject ThemeService themechange
 @rendermode InteractiveServer
 
-<head>
-	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
-</head>
+<!-- Headd -->
+<div class="container">
 
+	<div class="row">
 
-<body class="" style="background-color:#3B060A">
-	<!-- Headd -->
-	<div class="container">
+		<h1 class="text-center col-12 p-0" style="color: #DDE6ED;font-family:Raleway">Onix Torres</h1>
 
-		<div class="row">
+	</div>
 
-			<h1 class="justify-content-center text-center col-sm-12 col-md-12 col-lg-12 p-0" style="color: #FFF287;">Onix Torres</h1>
+</div>
+<!---->
+
+<!--Icon Row-->
+<div class="container">
+
+	<div class="row-cols-1">
+
+		<div class="justify-content-center col-12 text-center">
+			<a href="https://github.com/onixx241">
+				<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="#C83F12" class="bi bi-github" viewBox="0 0 16 16">
+					<path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27s1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8" />
+				</svg>
+			</a>
+			&ensp;
+			<a href="mailto:onix.torres57@gmail.com">
+				<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="#C83F12" class="bi bi-envelope-fill" viewBox="0 0 16 16">
+					<path d="M.05 3.555A2 2 0 0 1 2 2h12a2 2 0 0 1 1.95 1.555L8 8.414zM0 4.697v7.104l5.803-3.558zM6.761 8.83l-6.57 4.027A2 2 0 0 0 2 14h12a2 2 0 0 0 1.808-1.144l-6.57-4.027L8 9.586zm3.436-.586L16 11.801V4.697z" />
+				</svg>
+			</a>
+			&ensp;
+			@if (!themechange.isDarkMode)
+			{
+				//maybe move this to lower left side, next time: change colors, finish up things id like to learn and implement dark mode.
+				<button @onclick="themechange.ToggleTheme" class="border-0"style="background-color:transparent;outline-style:none;">
+					<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="#C83F12" class="bi bi-toggle-off" viewBox="0 0 16 16">
+						<path d="M11 4a4 4 0 0 1 0 8H8a5 5 0 0 0 2-4 5 5 0 0 0-2-4zm-6 8a4 4 0 1 1 0-8 4 4 0 0 1 0 8M0 8a5 5 0 0 0 5 5h6a5 5 0 0 0 0-10H5a5 5 0 0 0-5 5" />
+					</svg>
+				</button>
+			}
+			@if(themechange.isDarkMode)
+			{
+				<button @onclick="onToggleClick" class="border-0" style="background-color:transparent;">
+					<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="#C83F12" class="bi bi-toggle-on" viewBox="0 0 16 16">
+						<path d="M5 3a5 5 0 0 0 0 10h6a5 5 0 0 0 0-10zm6 9a4 4 0 1 1 0-8 4 4 0 0 1 0 8" />
+					</svg>
+				</button>
+			}
 
 		</div>
 
 	</div>
-	<!---->
 
-	<!--Icon Row-->
-	<div class="container">
+</div>
+<!--End of icon row-->
 
-		<div class="row-cols-1">
+<!--Start of second container-->
+<div class="container pt-2">
 
-			<div class="justify-content-center col-12 text-center">
-				<a href="https://github.com/onixx241">
-					<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="#C83F12" class="bi bi-github" viewBox="0 0 16 16">
-						<path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27s1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8" />
-					</svg>
-				</a>
-				&ensp;
-				<a href="mailto:onix.torres57@gmail.com">
-					<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="#C83F12" class="bi bi-envelope-fill" viewBox="0 0 16 16">
-						<path d="M.05 3.555A2 2 0 0 1 2 2h12a2 2 0 0 1 1.95 1.555L8 8.414zM0 4.697v7.104l5.803-3.558zM6.761 8.83l-6.57 4.027A2 2 0 0 0 2 14h12a2 2 0 0 0 1.808-1.144l-6.57-4.027L8 9.586zm3.436-.586L16 11.801V4.697z" />
-					</svg>
-				</a>
-			</div>
+	<div class="row">
 
-		</div>
+		<div class="border border-success-subtle col-6 col-sm-6 pb-1" style="background-color: #9DB2BF">
 
-	</div>
-	<!--End of icon row-->
+			<h1 class="" style="color: #DDE6ED;font-family: 'Bitcount Grid Double'">My Projects:</h1>
+			<!--Card not resizing/responsive :(-->
+			<div class="row row-cols-1 g-3">
+				<div class="col">
+					<div class="card h-100">
+						<img class="card-img-top img-fluid" style="height:180px;object-fit:cover;width:100%;" src="https://upload.wikimedia.org/wikipedia/commons/d/df/WebCrawlerArchitecture.svg" />
 
-	<!--Start of second container-->
-	<div class="container pt-2">
-		<div class="row">
-			
-			<div class="border border-success-subtle col-6 col-sm-6 pb-1" style="background-color: #8A0000">
+						<div class="card-body">
+							<h6 class="card-title">GuineaWebCrawler</h6>
+							<p class="card-text">Basic web crawler with database exporting, CLI flags</p>
+						</div>
+					</div>
+				</div>
 
-				<h1 class="" style="color: #FFF287">My Projects:</h1>
+				<div class="col">
+					<div class="card h-100">
+						<img class="card-img-top img-fluid" style="height:180px;object-fit:cover;width:100%;" src="https://faculty.etsu.edu/tarnoff/labs4717/instrdec/images/opcode0.gif" />
 
-				<div class="card" style="width: fit-content;">
-					<img class="card-img-top" src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/df/WebCrawlerArchitecture.svg/1200px-WebCrawlerArchitecture.svg.png" style="width:250px;">
-					<div class="card-body">
-
-						<h5 class="card-title">GuineaWebCrawler</h5>
-						<p class="card-text">cBasic web crawler with database exporting, CLI flags</p>
+						<div class="card-body">
+							<h6 class="card-title">CPU Emulator</h6>
+							<p class="card-text">Generic CPU Emulator with command parsing</p>
+						</div>
 
 					</div>
 
 				</div>
-				
-			</div>
 
-			<!--Second column-->
-			<div class="col-6 border border-success-subtle" style="background-color: #8A0000">
-				<h1 style="color: #FFF287;">More stuff</h1>
-				<ul>
-					<li>item here</li>
-					<li>put project cards here?</li>
-				</ul>
 			</div>
 
 		</div>
-	</div>
-	<!--end of second container-->
 
-</body>
+		<!--Second column-->
+		<div class="col-6 border border-success-subtle" style="background-color: #9DB2BF">
+			<h1 style="color: @themechange.currentTextColor;">Languages / Tech</h1>
+			<ul style="color: #DDE6ED;">
+				<li><h2>C#</h2></li>
+				<li><h2>ASP.NET</h2></li>
+				<li><h2>SQL</h2></li>
+				<li><h2>Python</h2></li>
+				<li><h2>Javascript</h2></li>
+				<li><h2>HTML</h2></li>
+				<li><h2>CSS</h2></li>
+				<li><h2>Bootstrap</h2></li>
+			</ul>
+		</div>
+
+	</div>
+</div>
+<!--end of second container-->
+<div class="container">
+
+	<div class="row">
+		<div class="col-12">
+			<section class="text-center"><h1 style="color: #DDE6ED;">Things I'd like to learn:</h1></section>
+		</div>
+	</div>
+
+</div>
+
+
 
 @code
 {
-	bool isDarkMode { get; set; }
+	private bool isDarkMode { get; set; } = false;
+	
+	private void onToggleClick()
+	{
+		themechange.ToggleTheme();
+		//the button works ! better than expected, now change store light and dark mode colors and change between them with string interpolation.
+		StateHasChanged();
+	}
 }
