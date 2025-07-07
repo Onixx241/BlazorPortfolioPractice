@@ -8,10 +8,6 @@
     },
     {
       "AbsoluteMoniker": "D:0:0:{458D5BDC-6CE5-4201-BAF6-50920E580034}|..\\ThemeSwitcher\\ThemeSwitcher.csproj|c:\\users\\onixt\\source\\repos\\themeswitcher\\themeservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A77C1E61-C445-42BE-96BF-CA4459AD8431}|PortfolioSite.csproj|c:\\users\\onixt\\source\\repos\\portfoliosite\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A77C1E61-C445-42BE-96BF-CA4459AD8431}|PortfolioSite.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -21,21 +17,8 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 0,
           "Children": [
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\onixt\\source\\repos\\PortfolioSite\\Program.cs",
-              "RelativeDocumentMoniker": "Program.cs",
-              "ToolTip": "C:\\Users\\onixt\\source\\repos\\PortfolioSite\\Program.cs",
-              "RelativeToolTip": "Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAuAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-06T17:58:27.057Z",
-              "EditorCaption": ""
-            },
             {
               "$type": "Document",
               "DocumentIndex": 0,
@@ -44,9 +27,9 @@
               "RelativeDocumentMoniker": "Components\\Pages\\Home.razor",
               "ToolTip": "C:\\Users\\onixt\\source\\repos\\PortfolioSite\\Components\\Pages\\Home.razor",
               "RelativeToolTip": "Components\\Pages\\Home.razor",
-              "ViewState": "AgIAAGMAAAAAAAAAAAAAAG0AAABZAAAAAAAAAA==",
+              "ViewState": "AgIAADwAAAAAAAAAAAAAwFUAAAB7AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-06-26T20:26:46.385Z",
+              "WhenOpened": "2025-07-06T20:39:29.98Z",
               "EditorCaption": ""
             },
             {
@@ -57,7 +40,7 @@
               "RelativeDocumentMoniker": "..\\ThemeSwitcher\\ThemeService.cs",
               "ToolTip": "C:\\Users\\onixt\\source\\repos\\ThemeSwitcher\\ThemeService.cs",
               "RelativeToolTip": "..\\ThemeSwitcher\\ThemeService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAA5AAAAAAAAAA==",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAYwAkAAAA8AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-07-06T17:51:28.02Z",
               "EditorCaption": ""

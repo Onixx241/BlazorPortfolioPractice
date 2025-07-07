@@ -1,0 +1,9 @@
+C:\Users\onixt\source\repos\ThemeSwitcher\bin\Release\net8.0\ThemeSwitcher.deps.json
+C:\Users\onixt\source\repos\ThemeSwitcher\bin\Release\net8.0\ThemeSwitcher.dll
+C:\Users\onixt\source\repos\ThemeSwitcher\bin\Release\net8.0\ThemeSwitcher.pdb
+C:\Users\onixt\source\repos\ThemeSwitcher\obj\Release\net8.0\ThemeSwitcher.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\onixt\source\repos\ThemeSwitcher\obj\Release\net8.0\ThemeSwitcher.csproj.CoreCompileInputs.cache
+C:\Users\onixt\source\repos\ThemeSwitcher\obj\Release\net8.0\ThemeSwitcher.dll
+C:\Users\onixt\source\repos\ThemeSwitcher\obj\Release\net8.0\refint\ThemeSwitcher.dll
+C:\Users\onixt\source\repos\ThemeSwitcher\obj\Release\net8.0\ThemeSwitcher.pdb
+C:\Users\onixt\source\repos\ThemeSwitcher\obj\Release\net8.0\ref\ThemeSwitcher.dll
