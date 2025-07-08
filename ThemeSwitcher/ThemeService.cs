@@ -1,7 +1,5 @@
-﻿public class ThemeService 
+public class ThemeService 
 {
-    public string teststring { get; set; } = "this came from a service, yay dependency injection !";
-
     public bool isDarkMode { get; set; } = false;
 
     public string mainBackground { get; set; } = "#3F4E4F";
@@ -37,7 +35,4 @@
 
         
     }
-
-
-
 }
